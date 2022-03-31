@@ -133,7 +133,6 @@ span {
     border-left: 1px solid black;
     border-right: 1px solid black;
     /* debug */
-    background-color: orange;
     height: 60px;
 }
 
@@ -174,12 +173,6 @@ hr {
 
 
 
-.enterprise {
-    /* debug */
-    background-color: orange;
-    height: 200px;
-}
-
 .row-enterprise::after {
     content: "";
     display: table;
@@ -216,4 +209,19 @@ hr {
 
 .btn-white {
     padding: 5px 15px;
+}
+
+
+
+
+
+.row-three-image::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-three-image .main-col img {
+    width: 100%;
+    height: auto;
 }
