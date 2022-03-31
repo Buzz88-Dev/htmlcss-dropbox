@@ -309,5 +309,16 @@ hr {
 
 footer {
     height: 300px;
-    background-color: black;
+    background-color: yellow;
+}
+
+footer hr {
+    color: grey;
+    width: 20%;
+}
+
+.footer-col {
+    float: left;
+    width: 20%;
+    padding-bottom: 50px;
 }
