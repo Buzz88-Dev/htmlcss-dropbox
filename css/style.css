@@ -95,16 +95,15 @@ span {
 
 
 /* regole main */
-.main-container {
+.container {
     width: 70%;
     margin: auto;
     /* debug */
     background-color: red;
-    height: 2000px;
     padding-top: 200px;
 }
 
-.main-container span {
+.container span {
     /* debug */
     font-size: 15px;
 }
@@ -117,8 +116,6 @@ span {
 .main-col {
     float: left;
     width: 30%;
-    /* debug */
-    height: 800px;
 }
 
 .main-margin-col {
@@ -225,3 +222,55 @@ hr {
     width: 100%;
     height: auto;
 }
+
+
+.container2 {
+    width: 50%;
+}
+
+
+
+
+
+.row-loghi::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row-loghi .square {
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+
+.row-loghi .rectangle {
+    float: left;
+    width: 40%;
+}
+
+.high-element, .low-element {
+    height: 200px;
+}
+
+.color-red {
+    background-color: red;
+}
+
+.color-green {
+    background-color: green;
+}
+
+.color-pink {
+    background-color: pink;
+}
+
+.color-blue {
+    background-color: blue;
+}
+
+.row-loghi img {
+    width: 50%;
+    height: auto;
+}
+
