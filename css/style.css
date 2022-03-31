@@ -25,18 +25,18 @@ nav {
     height: 50px;
 }
 
-.container {
-    width: 70%;
+.header-container {
+    width: 80%;
     margin: auto;
 }
 
-header .container h1 {
+header .header-container h1 {
     /* debug */
     font-size: 50px;
     text-align: justify;
 }
 
-.row-header::after {
+.header-row::after {
     content: "";
     display: table;
     clear: both;
@@ -44,15 +44,13 @@ header .container h1 {
 
 .header-col-sx {
     float: left;
-    width: 35%;
-    /* debug */ 
+    width: 35%; 
 }
 
 .header-col-dx {
     float: left;
     width: 65%;
     text-align: right;
-    /* debug */
 }
 
 .header-col-dx img {
@@ -60,11 +58,11 @@ header .container h1 {
     height: auto;
 }
 
-.header-row-padding-top {
+.row-padding-top {
     padding-top: 30px;
 }
 
-.header-row-padding-bottom {
+.row-padding-bottom {
     padding-bottom: 30px;
 }
 
@@ -86,3 +84,40 @@ span {
 
 
 /* regole main */
+.main-container {
+    width: 70%;
+    margin: auto;
+    /* debug */
+    background-color: red;
+    height: 500px;
+    padding-top: 200px;
+}
+
+.main-container span {
+    /* debug */
+    font-size: 15px;
+}
+.main-row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-col {
+    float: left;
+    width: 30%;
+    /* debug */
+    background-color: blue;
+    height: 400px;
+}
+
+.main-margin-col {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contain-col {
+    /* debug */
+    background-color: orange;
+    height: 50px;
+}
