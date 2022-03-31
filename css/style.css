@@ -100,7 +100,7 @@ span {
     margin: auto;
     /* debug */
     background-color: red;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 .container span {
@@ -178,6 +178,7 @@ hr {
 
 .enterprise-first-col {
     float: left;
+    width: 50%;
 }
 
 .enterprise-second-col {
@@ -274,3 +275,39 @@ hr {
     height: auto;
 }
 
+
+.azzurro {
+    /* debug */
+    background-color: aqua;
+}
+
+.azzurro h2 {
+    font-size: 30px;
+}
+
+
+
+
+
+.questions::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.first-question {
+    float: left;
+    width: 70%;
+}
+
+.arrow {
+    float: right;
+}
+
+
+
+
+footer {
+    height: 300px;
+    background-color: black;
+}
