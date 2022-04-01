@@ -323,6 +323,7 @@ main span {
 .btn-white {
     background-color: white;
     padding: 5px 15px;
+    border: none;
 }
 
 .btn-white-two {
@@ -334,13 +335,14 @@ main span {
     padding: 8px 18px;
     color: white;
     background-color: blue;
-    border: hidden;
+    border: none;
 }
 
 .btn-blue-two {
     padding: 5px 50px;
     color: white;
     background-color: blue;
+    border: none;
 }
 
 
