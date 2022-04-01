@@ -51,6 +51,10 @@ body {
     padding-top: 80px;
 }
 
+.p-t10 {
+    padding-top: 100px;
+}
+
 .p-t15 {
     padding-top: 150px;
 }
@@ -83,6 +87,10 @@ body {
     padding-left: 40px;
 }
 
+.p-r4 {
+    padding-right: 40px;
+}
+
 .contain-col {
     padding: 20px 30px;
 }
@@ -100,6 +108,10 @@ body {
     height: 200px;
 }
 
+.width-10 {
+    width: 10%;
+}
+
 .width-30 {
     width: 30%;
 }
@@ -114,6 +126,37 @@ body {
 
 .line-height {
     line-height: 2.0;
+}
+
+
+
+/* color */
+.color-grey {
+    color: grey;
+}
+
+.color-red {
+    background-color: red;
+}
+
+.color-green {
+    background-color: green;
+}
+
+.color-pink {
+    background-color: pink;
+}
+
+.color-blue {
+    background-color: blue;
+}
+
+.color-aqua {
+    background-color: rgb(136, 210, 237);
+}
+
+.color-brown {
+    color: brown;
 }
 
 
@@ -183,6 +226,14 @@ body {
 
 
 
+
+
+
+
+
+
+
+
  /* header*/ 
 header {
     height: 650px;
@@ -208,25 +259,20 @@ header span {
     font-weight: bold;
 }
 
-
-
-
-
-
 /* main*/
-main h2 {
+h2 {
     font-size: 40px;
 }
 
-main h3 {
+h3 {
     font-size: 25px;
 }
 
-main h4 {
+h4 {
     font-size: 20px;
 }
 
-main h5 {
+h5 {
     font-size: 15px;
 }
 
@@ -264,14 +310,12 @@ main span {
     text-decoration: underline;
 }
 
-
-
 .image img {
     width: 100%;
     height: auto;
 }
 
-.row .square img, .row .rectangle img {
+.square img, .rectangle img {
     width: 50%;
     height: auto;
 }
@@ -285,7 +329,6 @@ main span {
     padding: 10px 70px;
     border: none;
 }
-
 
 .btn-blue {
     padding: 8px 18px;
@@ -309,6 +352,7 @@ footer {
 
 footer p {
     padding-bottom: 10px;
+    font-size: 12px;
 }
 
 
@@ -323,32 +367,3 @@ footer p {
 
 
 
-
-/* color */
-.color-grey {
-    color: grey;
-}
-
-.color-red {
-    background-color: red;
-}
-
-.color-green {
-    background-color: green;
-}
-
-.color-pink {
-    background-color: pink;
-}
-
-.color-blue {
-    background-color: blue;
-}
-
-.color-aqua {
-    background-color: rgb(94, 192, 228);
-}
-
-.color-brown {
-    color: brown;
-}
