@@ -28,8 +28,8 @@ body {
 
 .container-small {
     text-align: center;
-    border-bottom: 1px solid black;
-    height: 50px;
+    border-bottom: 1px solid rgb(200, 193, 193);
+    padding: 20px 0px;
 }
 
 
@@ -109,7 +109,7 @@ body {
 }
 
 .border {
-    border: 1px solid black;
+    border: 1px solid rgb(200, 193, 193);
 }
 
 .line-height {
@@ -161,6 +161,16 @@ body {
     float: right;
 }
 
+.i-col {
+    float: left;
+    width: 7%;
+}
+
+.span-col {
+    float: left;
+    width: 93%;
+}
+
 .question-col {
     float: left;
     width: 70%;
@@ -204,17 +214,57 @@ header span {
 
 
 /* main*/
-h2 {
+main h2 {
     font-size: 40px;
 }
 
-p {
+main h3 {
+    font-size: 25px;
+}
+
+main h4 {
+    font-size: 20px;
+}
+
+main h5 {
     font-size: 15px;
 }
 
-span {
-    font-size: 30px;
+main p {
+    font-size: 15px;
 }
+
+main .contain-col p:first-of-type {
+    color: grey;
+}
+
+.circle {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 2px solid blue;
+    border-radius: 50%;
+}
+
+.circle-two {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+main span {
+    font-size: 12px;
+}
+
+.blue-link {
+    color: blue;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+
 
 .image img {
     width: 100%;
@@ -227,11 +277,13 @@ span {
 }
 
 .btn-white {
+    background-color: white;
     padding: 5px 15px;
 }
 
 .btn-white-two {
-    padding: 5px 50px;
+    padding: 10px 70px;
+    border: none;
 }
 
 
@@ -267,6 +319,11 @@ footer p {
 
 
 
+
+
+
+
+
 /* color */
 .color-grey {
     color: grey;
@@ -290,4 +347,8 @@ footer p {
 
 .color-aqua {
     background-color: rgb(94, 192, 228);
+}
+
+.color-brown {
+    color: brown;
 }
