@@ -9,6 +9,9 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
+
+/* contenitori */
 .container-one {
     width: 80%;
     margin: auto;
@@ -17,8 +20,6 @@ body {
 .container-two {
     width: 70%;
     margin: auto;
-    background-color: red;
-    padding-top: 100px;
 }
 
 .container-three {
@@ -28,35 +29,62 @@ body {
 .container-small {
     text-align: center;
     border-bottom: 1px solid black;
-    height: 60px;
+    height: 50px;
 }
 
-.row-padding-top {
+
+
+/* padding, margin , width, height, border, line-height,*/
+.p-t1 {
+    padding-top: 10px;
+}
+
+.p-t3 {
     padding-top: 30px;
 }
 
-.row-padding-bottom {
+.p-t4 {
+    padding-top: 40px;
+}
+
+.p-t8 {
+    padding-top: 80px;
+}
+
+.p-t15 {
+    padding-top: 150px;
+}
+
+.p-b1 {
+    padding-bottom: 10px;
+}
+
+.p-b2 {
+    padding-bottom: 20px;
+}
+
+.p-b3 {
     padding-bottom: 30px;
+}
+
+.p-b4 {
+    padding-bottom: 40px;
+}
+
+.p-b8 {
+    padding-bottom: 80px;
+}
+
+.p-b10 {
+    padding-bottom: 100px;
+}
+
+.p-l4 {
+    padding-left: 40px;
 }
 
 .contain-col {
     padding: 20px 30px;
-}
-
-.main-padding-bottom {
-    padding-bottom: 10px;
-}
-
-.main-padding-bottom-second {
-    padding-bottom: 40px;
-}
-
-.main-padding-top {
-    padding-top: 40px;
-}
-
-.main-padding-left {
-    padding-left: 40px;
 }
 
 .margin-col {
@@ -64,17 +92,120 @@ body {
     margin-right: 5%;
 }
 
-.altezza-linea {
-    line-height: 1.5;
-}
-
 .height-col {
     height: 1200px;
 }
 
-.image img {
+.high-element, .low-element {
+    height: 200px;
+}
+
+.width-30 {
+    width: 30%;
+}
+
+.width-max {
     width: 100%;
-    height: auto;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.line-height {
+    line-height: 2.0;
+}
+
+
+
+/* regole float */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.square {
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+
+.rectangle {
+    float: left;
+    width: 40%;
+}
+
+.header-row-col-sx {
+    float: left;
+    width: 35%; 
+}
+
+.header-row-col-dx {
+    float: left;
+    width: 65%;
+    text-align: right;
+}
+
+.main-col {
+    float: left;
+    width: 30%;
+}
+
+.col {
+    float: left;
+    width: 50%;
+}
+
+.second-col {
+    float: right;
+}
+
+.question-col {
+    float: left;
+    width: 70%;
+}
+
+.footer-col {
+    float: left;
+    width: 20%;
+}
+
+
+
+ /* header*/ 
+header {
+    height: 650px;
+}
+
+nav {
+    background-color: white;
+    height: 50px;
+}
+
+header h1 {
+    font-size: 60px;
+    text-align: justify;
+}
+
+header p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header span {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* main*/
+h2 {
+    font-size: 40px;
 }
 
 p {
@@ -85,24 +216,58 @@ span {
     font-size: 30px;
 }
 
-.width-max {
+.image img {
     width: 100%;
+    height: auto;
 }
 
-.width-30 {
-    width: 30%;
+.row .square img, .row .rectangle img {
+    width: 50%;
+    height: auto;
 }
 
 .btn-white {
     padding: 5px 15px;
 }
 
+.btn-white-two {
+    padding: 5px 50px;
+}
+
+
 .btn-blue {
-    padding: 5px 15px;
+    padding: 8px 18px;
+    color: white;
+    background-color: blue;
+    border: hidden;
+}
+
+.btn-blue-two {
+    padding: 5px 50px;
     color: white;
     background-color: blue;
 }
 
+
+/* footer */
+footer {
+    color: white;;
+    background-color: black;
+}
+
+footer p {
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* color */
 .color-grey {
     color: grey;
 }
@@ -124,109 +289,5 @@ span {
 }
 
 .color-aqua {
-    background-color: aqua;
-}
-
-
-
-
-
-
-/* regole float */
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.row .square {
-    float: left;
-    width: 15%;
-    text-align: center;
-}
-
-.row .rectangle {
-    float: left;
-    width: 40%;
-}
-
-.row .square img, .row .rectangle img {
-    width: 50%;
-    height: auto;
-}
-
-.header-row-col-sx {
-    float: left;
-    width: 35%; 
-}
-
-.header-row-col-dx {
-    float: left;
-    width: 65%;
-    text-align: right;
-}
-
-.main-col {
-    float: left;
-    width: 30%;
-    border: 1px solid black;
-}
-
-.col {
-    float: left;
-    width: 50%;
-}
-
-.second-col {
-    float: right;
-}
-
-.first-question {
-    float: left;
-    width: 70%;
-}
-
-.footer-col {
-    float: left;
-    width: 20%;
-    padding-bottom: 50px;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* regole header */
-header {
-    height: 650px;
-}
-
-nav {
-    background-color: white;
-    height: 50px;
-}
-
-header h1 {
-    font-size: 60px;
-    text-align: justify;
-}
-
-/* regole main */
-.border {
-    border: 1px solid black;
-}
-
-.high-element, .low-element {
-    height: 200px;
-}
-
-/* regole footer */
-footer {
-    background-color: yellow;
+    background-color: rgb(94, 192, 228);
 }
