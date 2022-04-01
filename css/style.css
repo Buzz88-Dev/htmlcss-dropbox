@@ -1,3 +1,4 @@
+/* regole generali */
 * {
     margin: 0;
     padding: 0;
@@ -5,62 +6,29 @@
   }
 
 body {
-    font-family: Open Sans,sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
-/* regole header */
-header {
-    /* debug */
-    height: 550px;
-    background-color: aqua;
-}
-
-nav {
-    background-color: white;
-    /* debug */
-    height: 50px;
-}
-
-.header-container {
+.container-one {
     width: 80%;
     margin: auto;
 }
 
-header .header-container h1 {
-    /* debug */
-    font-size: 50px;
-    text-align: justify;
+.container-two {
+    width: 70%;
+    margin: auto;
+    background-color: red;
+    padding-top: 100px;
 }
 
-.header-row::after {
-    content: "";
-    display: table;
-    clear: both;
+.container-three {
+    width: 50%;
 }
 
-.header-col-sx {
-    float: left;
-    width: 35%; 
-}
-
-.header-col-dx {
-    float: left;
-    width: 65%;
-    text-align: right;
-}
-
-.header-col-dx img {
-    width: 100%;
-    height: auto;
+.container-small {
+    text-align: center;
+    border-bottom: 1px solid black;
+    height: 60px;
 }
 
 .row-padding-top {
@@ -71,71 +39,8 @@ header .header-container h1 {
     padding-bottom: 30px;
 }
 
-.altezza-linea {
-    line-height: 1.5;
-}
-
-.btn-blue {
-    padding: 5px 15px;
-    color: white;
-    background-color: blue;
-}
-
-span {
-    font-size: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-/* regole main */
-.container {
-    width: 70%;
-    margin: auto;
-    /* debug */
-    background-color: red;
-    padding-top: 100px;
-}
-
-.container span {
-    /* debug */
-    font-size: 15px;
-}
-.main-row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.main-col {
-    float: left;
-    width: 30%;
-}
-
-.main-margin-col {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.contain-high-col {
-    padding-top: 20px;
-    text-align: center;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    /* debug */
-    height: 60px;
-}
-
 .contain-col {
     padding: 20px 30px;
-    border: 1px solid black;
 }
 
 .main-padding-bottom {
@@ -154,104 +59,52 @@ span {
     padding-left: 40px;
 }
 
-.main-button {
-    text-align: center;
+.margin-col {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-.larghezza {
-    width: 100%;
+.altezza-linea {
+    line-height: 1.5;
 }
 
-hr {
-    width: 30%;
+.height-col {
+    height: 1200px;
 }
 
-
-
-
-
-.row-enterprise::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.enterprise-first-col {
-    float: left;
-    width: 50%;
-}
-
-.enterprise-second-col {
-    float: right;
-}
-
-
-
-
-
-.row-single-image::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.single-image {
-    float: left;
-    width: 50%;
-}
-
-.single-image img {
+.image img {
     width: 100%;
     height: auto;
+}
+
+p {
+    font-size: 15px;
+}
+
+span {
+    font-size: 30px;
+}
+
+.width-max {
+    width: 100%;
+}
+
+.width-30 {
+    width: 30%;
 }
 
 .btn-white {
     padding: 5px 15px;
 }
 
-
-
-
-
-.row-three-image::after {
-    content: "";
-    display: table;
-    clear: both;
+.btn-blue {
+    padding: 5px 15px;
+    color: white;
+    background-color: blue;
 }
 
-.row-three-image .main-col img {
-    width: 100%;
-    height: auto;
-}
-
-
-.container2 {
-    width: 50%;
-}
-
-
-
-
-
-.row-loghi::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.row-loghi .square {
-    float: left;
-    width: 15%;
-    text-align: center;
-}
-
-.row-loghi .rectangle {
-    float: left;
-    width: 40%;
-}
-
-.high-element, .low-element {
-    height: 200px;
+.color-grey {
+    color: grey;
 }
 
 .color-red {
@@ -270,29 +123,62 @@ hr {
     background-color: blue;
 }
 
-.row-loghi img {
+.color-aqua {
+    background-color: aqua;
+}
+
+
+
+
+
+
+/* regole float */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row .square {
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+
+.row .rectangle {
+    float: left;
+    width: 40%;
+}
+
+.row .square img, .row .rectangle img {
     width: 50%;
     height: auto;
 }
 
-
-.azzurro {
-    /* debug */
-    background-color: aqua;
+.header-row-col-sx {
+    float: left;
+    width: 35%; 
 }
 
-.azzurro h2 {
-    font-size: 30px;
+.header-row-col-dx {
+    float: left;
+    width: 65%;
+    text-align: right;
 }
 
+.main-col {
+    float: left;
+    width: 30%;
+    border: 1px solid black;
+}
 
+.col {
+    float: left;
+    width: 50%;
+}
 
-
-
-.questions::after {
-    content: "";
-    display: table;
-    clear: both;
+.second-col {
+    float: right;
 }
 
 .first-question {
@@ -300,25 +186,47 @@ hr {
     width: 70%;
 }
 
-.arrow {
-    float: right;
-}
-
-
-
-
-footer {
-    height: 300px;
-    background-color: yellow;
-}
-
-footer hr {
-    color: grey;
-    width: 20%;
-}
-
 .footer-col {
     float: left;
     width: 20%;
     padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* regole header */
+header {
+    height: 650px;
+}
+
+nav {
+    background-color: white;
+    height: 50px;
+}
+
+header h1 {
+    font-size: 60px;
+    text-align: justify;
+}
+
+/* regole main */
+.border {
+    border: 1px solid black;
+}
+
+.high-element, .low-element {
+    height: 200px;
+}
+
+/* regole footer */
+footer {
+    background-color: yellow;
 }
