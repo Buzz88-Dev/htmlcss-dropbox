@@ -23,7 +23,7 @@ body {
 }
 
 .container-three {
-    width: 50%;
+    width: 70%;
 }
 
 .container-small {
@@ -113,11 +113,11 @@ body {
 }
 
 .height-col {
-    height: 1200px;
+    min-height: 1200px;
 }
 
 .high-element, .low-element {
-    height: 200px;
+    min-height: 200px;
 }
 
 .width-10 {
@@ -190,12 +190,12 @@ body {
 
 .col-nav {
     float: left;
-    width: 40%;
+    width: 50%;
 }
 
 .second-col-nav {
     float: right;
-    width: 40%;
+    width: 50%;
 }
 
 .square {
@@ -262,7 +262,7 @@ body {
 
  /* header */
 header {
-    height: 650px;
+    max-height: 650px;
 }
 
 
@@ -272,6 +272,7 @@ nav {
     background-color: white;
     width: 100%;
     position: fixed;
+    z-index: 10;
 }
 
 nav ul {
