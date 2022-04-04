@@ -27,10 +27,24 @@
             </div>
             <div class="second-col-nav">
                 <ul>
-                    <li><a href="#"><button class="btn-blue-nav">Inizia</button></a></li>
-                    <li><a href="#">Accedi</a></li>
+                    <li><a href="#"><button class="btn-blue button-padding-three">Inizia</button></a></li>
+                    <li>
+                        <a href="#">Accedi</a>
+                        <ul>
+                            <li><a href="#">Supporto</a></li>
+                            <li><a href="#">Contatti</a></li>
+                            <li><a href="#">Va bene</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Contatta l'ufficio vendite</a></li>
-                    <li><a href="#">Supporto</a></li>
+                    <li>
+                        <a href="#">Supporto</a>
+                        <ul>
+                            <li><a href="#">Supporto</a></li>
+                            <li><a href="#">Contatti</a></li>
+
+                        </ul>
+                    </li>
                   </ul>
             </div>
         </nav>
@@ -43,7 +57,7 @@
                     <p class="p-b3 width-90">
                         Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
                     </p>
-                    <button class="btn-blue">Inizia la tua prova gratuita</button>
+                    <button class="btn-blue button-padding-one">Inizia la tua prova gratuita</button>
                     <p class="p-t1 p-b3">Annulla in qualsiasi momento</p>
                     <span><a href="#arrivo1">&#9759;</a></span>
                 </div>
@@ -64,10 +78,14 @@
             <!-- Piano Dropbox Business che fa per te -->
             <h2 class="p-b3 p-t15">Trova il piano Dropbox Business che fa per te</h2>
             <div class="p-b3">
-                <div class="circle"></div>
-                <span>Fatturazione mensile</span>
-                <div class="circle-two"></div>
-                <span>Fatturazione annuale</span>
+                <label class="container p-r4">Fatturazione mensile
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Fatturazione annuale
+                    <input type="radio" name="radio">
+                    <span class="checkmark"></span>
+                </label>
             </div>
             <div class="row p-b4">
                 <div class="main-col height-col border">
@@ -96,7 +114,7 @@
                             </div>
                         </div>         
                         <div class="p-b4">
-                            <button class="width-max btn-blue">Prova gratis per 30 giorni</button>
+                            <button class="width-max btn-blue button-padding-one">Prova gratis per 30 giorni</button>
                         </div>  
                         <p class="p-b3">oppure <a link href="">acquista ora</a></p>  
                         <hr class="width-30">  
@@ -170,9 +188,9 @@
                             </div>
                         </div>         
                         <div class="p-b4">
-                            <button class="width-max btn-blue">Prova gratis per 30 giorni</button>
+                            <button class="width-max btn-blue button-padding-one">Prova gratis per 30 giorni</button>
                         </div>  
-                        <p class="p-b3">oppure <a link href="">acquista ora</a></p> 
+                        <p class="p-b3">oppure <a link href="#">acquista ora</a></p> 
                         <hr class="width-30">  
                         <h4 class="p-t4 p-b3">Punti salienti del piano</h4>
 
@@ -252,7 +270,7 @@
                             </div>
                         </div>         
                         <div class="p-b4">
-                            <button class="width-max btn-blue">Prova gratis per 30 giorni</button>
+                            <button class="width-max btn-blue button-padding-one">Prova gratis per 30 giorni</button>
                         </div>  
                         <p class="p-b3">oppure <a link href="">acquista ora</a></p> 
                         <hr class="width-30">  
@@ -323,7 +341,7 @@
                             <h3>Enterprise</h3>
                         </div>
                         <div class="second-col">
-                            <button class="btn-blue-two">Contatta l'ufficio vendite</button>
+                            <button class="btn-blue button-padding-two">Contatta l'ufficio vendite</button>
                         </div>
                     </div>
                     <h5 class="p-b3">Contatta l'ufficio vendite per i prezzi</h5>
@@ -427,18 +445,18 @@
         <!-- Designit -->
         <div class="row p-t4">
             <div class="square">
-                <div class="high-element color-green p-t8">
+                <div class="high-element color-green p-t8 border-square">
                     <img src="img/designit.svg">
                 </div>
-                <div class="low-element color-red p-t8">
+                <div class="low-element color-red p-t8 border-square">
                     <img src="img/university_of_florida.svg">
                 </div>
             </div>
             <div class="square">
-                <div class="high-element color-pink p-t6">
+                <div class="high-element color-pink p-t6 border-square">
                     <img src="img/arizona_state_university.svg">
                 </div>
-                <div class="low-element color-blue p-t6">
+                <div class="low-element color-blue p-t6 border-square">
                     <img src="img/topps.svg">
                 </div>
             </div>
@@ -457,18 +475,18 @@
                 </div>
             </div>
             <div class="square">
-                <div class="high-element color-red p-t7">
+                <div class="high-element color-red p-t7 border-square">
                     <img src="img/world_bicycle_relief.svg">
                 </div>
-                <div class="low-element color-green p-t7">
+                <div class="low-element color-green p-t7 border-square">
                     <img src="img/lonely_planet.svg">
                 </div>
             </div>
             <div class="square">
-                <div class="high-element color-pink p-t8">
+                <div class="high-element color-pink p-t8 border-square">
                     <img src="img/hearst_corp.svg">
                 </div>
-                <div class="low-element color-blue p-t6">
+                <div class="low-element color-blue p-t6 border-square">
                     <img src="img/clear_channel.svg">
                 </div>
             </div>
