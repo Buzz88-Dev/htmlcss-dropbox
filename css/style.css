@@ -67,10 +67,6 @@ body {
     padding-top: 150px;
 }
 
-.p-b1 {
-    padding-bottom: 10px;
-}
-
 .p-b2 {
     padding-bottom: 20px;
 }
@@ -250,31 +246,27 @@ body {
 }
 
 
+ /* body */
 
-
-
-
-
-
-
-
-
- /* header*/ 
+ /* header */
 header {
     height: 650px;
 }
 
+
+
+/* nav */
 nav {
     background-color: white;
     width: 100%;
     position: fixed;
 }
 
-ul {
+nav ul {
     list-style-type: none;
 }
 
-li {
+nav ul li {
     float: left;
     padding: 20px 20px;
 }
@@ -284,18 +276,42 @@ li {
     padding: 20px 20px;
 }
 
-li a {
+nav li a {
     font-size: 15px;
     font-weight: bold;
     display: block;
     text-align: center;
     text-decoration: none;
+    color: black;
 }
 
-li a img {
+nav li a img {
     width: 80%;
     height: auto;
 }
+
+.second-col-nav ul li {
+    position: relative;
+}
+
+.second-col-nav ul li:hover ul {
+    display: inline;
+}
+
+.second-col-nav ul li ul {
+    text-align: center;
+    position: absolute;
+    display: none;
+    border-top: 3px solid black;
+    top: 63px;
+    right: 1px;
+}
+
+.second-col-nav ul li ul li { 
+    width: 105px;
+    background-color: white;
+}
+
 
 header h1 {
     font-size: 60px;
@@ -312,10 +328,14 @@ header span {
     font-weight: bold;
 }
 
-header a {
+header .container-one a {
     color: black;
+    text-decoration: none;
 }
 
+
+
+/* main */
 main a {
     color: blue;
 }
@@ -340,27 +360,19 @@ main p {
     font-size: 15px;
 }
 
-main .contain-col p:first-of-type {
+main .contain-col p {
+    font-size: 12px;
+}
+
+main .main-col .contain-col h5 + p {
     color: grey;
 }
 
-.circle {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border: 2px solid blue;
-    border-radius: 50%;
+main .container-small span {
+    font-size: 15px;
 }
 
-.circle-two {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-
-main span {
+main .contain-col span {
     font-size: 12px;
 }
 
@@ -385,9 +397,14 @@ main span {
     height: auto;
 }
 
+.border-square:hover {
+    border: 5px solid black;
+}
+
 .btn-white {
     background-color: white;
-    padding: 5px 15px;
+    padding: 10px 20px;
+    border: 1px solid black;
 }
 
 .btn-white-two {
@@ -396,27 +413,74 @@ main span {
 }
 
 .btn-blue {
-    padding: 8px 18px;
+    padding: 10px 20px;
     color: white;
     background-color: blue;
     border: none;
 }
 
-.btn-blue-two {
-    padding: 5px 50px;
-    color: white;
-    background-color: blue;
-    border: none;
+.button-padding-one {
+    padding: 10px 20px;
 }
 
-.btn-blue-nav {
+.button-padding-two {
+    padding: 10px 50px;
+}
+
+.button-padding-three {
     padding: 4px 20px;
-    color: white;
+}
+
+/* checkbox main*/
+.container {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 15px;
+}
+  
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container input:checked ~ .checkmark {
     background-color: blue;
-    border: none;
+}
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
 }
 
 
+
+/* footer */
 footer {
     color: white;;
     background-color: black;
