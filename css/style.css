@@ -87,8 +87,16 @@ body {
     padding-bottom: 100px;
 }
 
+.p-l1 {
+    padding-left: 10px;
+}
+
 .p-l4 {
     padding-left: 40px;
+}
+
+.p-r1 {
+    padding-right: 10px;
 }
 
 .p-r4 {
@@ -141,6 +149,10 @@ body {
 /* color */
 .color-grey {
     color: rgb(249, 239, 239);
+}
+
+.color-grey-backg {
+    background-color: rgba(92, 88, 88, 0.134);
 }
 
 .color-red {
@@ -299,19 +311,16 @@ nav li a img {
 }
 
 .second-col-nav ul li ul {
-    text-align: center;
     position: absolute;
     display: none;
-    border-top: 3px solid black;
+    border-top: 5px solid black;
     top: 63px;
-    right: 1px;
 }
 
 .second-col-nav ul li ul li { 
     width: 105px;
     background-color: white;
 }
-
 
 header h1 {
     font-size: 60px;
